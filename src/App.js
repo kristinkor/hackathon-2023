@@ -7,9 +7,30 @@ import CardGray from "./components/gray-card"
 import CardWhite from "./components/white-card"
 import Sponsors from "./components/sponsors"
 import Footer from "./components/footer"
-import logo from "./assets/ctp-logo-square.png"
+import painter from "./assets/painter.png"
+import getInvolved from "./assets/getinvolved2.png"
+import presentation from "./assets/presentation.png"
+
 
 function App() {
+
+  const bulletPoints = [
+    'Social media-esque web app where users can post about art pieces with ratings and comments',
+    'Proof of concept music player?',
+    'Machine learning to explore human perceptions and expectations of art and creativity',
+    'Data science algorithms to generate art and music',
+    'Simple neural network trained on a certain art or set of images to generate stunning visual imagery',
+    'E-commerce app to share and sell fine art pieces'
+];
+
+const HackathonHighlights = [
+  'Networking Authentically workshop with DEI and First Gen Advocate | Career Coach, Bedillia Ramirez',
+  'Info Session and Tech Resume Overview with Oscar Health’s Recruiting Manager, Campus and Early Career, Joelle Molina',
+  'Intro to Forage’s Virtual Work Programs with Harrison Bass, Global Head of Educational Partnerships, Forage',
+  'LinkedIn Best Practices workshop with Abdullah Haydar, Senior Engineering Leader, LinkedIn',
+  'Project Mentorship from our partners, including Nextdoor, NuArch, Salesforce, and LinkedIn',
+];
+
   return (
     <div>
       <Banner />
@@ -17,26 +38,26 @@ function App() {
       <CTPImg />
       <Theme />
       <CardGray
-        heading="Hello"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        buttonInfo="Button"
+        heading="Theme: The Arts & Tech"
+        text="Here are some project ideas:"
+        bulletPoints={bulletPoints}
+        buttonInfo="Join on DevPost"
         buttonHref="/test"
-        imageSrc={logo}
+        imageSrc={painter}
       />
       <CardWhite
-        heading="Hello"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        buttonInfo="Button"
-        buttonHref="/test"
-        imageSrc={logo}
+        heading="Hackathon Itinerary"
+        text="Planned events students can attend during the duration of the Hackathon."
+        bulletPoints={HackathonHighlights}
+        imageSrc={presentation}
       />
       <CardGray
-        heading="Hello"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        buttonInfo="Button"
+        heading="Get Involved"
+        text="We need your help to make this event memorable and productive for our new cohort! Click below if you’d like to mentor our fellows, judge projects, or make a donation so that fellows can earn prizes."
+        imageSrc={getInvolved}
+        buttonInfo="Get Involved"
         buttonHref="/test"
-        imageSrc={logo}
-      />
+/>
       <Sponsors />
       <Footer />
     </div>
