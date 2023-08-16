@@ -42,7 +42,7 @@ const HackathonHighlights = [
         text="Here are some project ideas:"
         bulletPoints={bulletPoints}
         buttonInfo="Join on DevPost"
-        buttonHref="/test"
+        buttonHref="https://ctp-arts-tech-hackathon.devpost.com/?preview_token=MstTTyUmDrxRNEOiczOlkaI5njCCrsCqBbZCdW7v234%3D"
         imageSrc={painter}
       />
       <CardWhite
