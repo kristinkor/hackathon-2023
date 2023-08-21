@@ -1,6 +1,5 @@
 import './App.css';
 import Navbar from "./components/navbar"
-import Banner from "./components/banner"
 import CTPImg from "./components/landing-image"
 import Theme from "./components/theme"
 import CardGray from "./components/gray-card"
@@ -33,7 +32,6 @@ const HackathonHighlights = [
 
   return (
     <div>
-      <Banner />
       <Navbar />
       <CTPImg />
       <Theme />

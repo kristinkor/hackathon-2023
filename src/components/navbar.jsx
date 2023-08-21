@@ -13,21 +13,20 @@ export default function NavbarWithDropdown() {
                 />
             </Navbar.Brand>
             <div className="flex items-center justify-center space-x-4">
-                <Dropdown inline label="Get Involved">
-                    <Dropdown.Item>CUNY Colleges</Dropdown.Item>
-                    <Dropdown.Item>Volunteers</Dropdown.Item>
-                    <Dropdown.Item>Employers</Dropdown.Item>
-                </Dropdown>
-                <Dropdown inline label="Students">
-                    <Dropdown.Item>Apply</Dropdown.Item>
-                    <Dropdown.Item>Fellows</Dropdown.Item>
-                    <Dropdown.Item>Hackathons</Dropdown.Item>
-                </Dropdown>
-                <Dropdown inline label="About Us">
-                    <Dropdown.Item>Program</Dropdown.Item>
-                    <Dropdown.Item>Staff</Dropdown.Item>
-                    <Dropdown.Item>Advisory Board</Dropdown.Item>
-                </Dropdown>
+                <Navbar.Collapse>
+                    <Navbar.Link active href="#" className = " ml-8 text-l">
+                        <p>Home</p>
+                    </Navbar.Link>
+                    <Navbar.Link target="_blank" rel="noreferrer noopener" href="https://discord.gg/GTTECFWRvQ" className = "text-l">
+                        Discord
+                    </Navbar.Link>
+                    <Navbar.Link target="_blank" rel="noreferrer noopener" href="https://ctp-arts-tech-hackathon.devpost.com/?preview_token=MstTTyUmDrxRNEOiczOlkaI5njCCrsCqBbZCdW7v234%3D" className = "text-l">
+                        DevPost
+                    </Navbar.Link>
+                    <Navbar.Link href="https://cunytechprep.org/" className = "text-l">
+                        Main CTP Site
+                    </Navbar.Link>
+                </Navbar.Collapse>
             </div>
         </Navbar>
     );
