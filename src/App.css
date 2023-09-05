@@ -6,6 +6,270 @@
   height: 40vmin;
   pointer-events: none;
 }
+.container {
+  width: 1280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.down-arrow{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrows {
+  width: 60px;
+  height: 72px;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 20px;
+}
+
+.arrows path {
+  stroke: #673ab7;
+  fill: transparent;
+  stroke-width: 1px;  
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+  animation-delay:-1s;
+  -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay:-0.5s;
+  -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 { 
+  animation-delay:0s;
+  -webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
+div.body > section:nth-child(even) {
+  background-color: rgb(243 244 246);
+}
+
+div.body > section:nth-child(odd) .home-wotd__middle{
+  flex-flow: row-reverse;
+}
+
+div.body > section:nth-child(odd) .home-wotd__scores {
+  margin-left: 0;
+}
+
+div.body > section:nth-child(odd) .home-wotd__desc {
+  margin-left: 0;
+}
+div.body > section:nth-child(odd)  .home-wotd__side {
+  text-align: end;
+    padding-right: 6.9%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+h4 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 200;
+}
+
+.bg-purple-150 {
+  background-color: #dcd7fe96;
+}
+
+div.body > section:nth-child(odd) .home-wotd__wrapper {
+  text-align: right;
+  padding-right: 10.37%;
+}
+
+.win-header{
+  font-family: "Open Sans", sans-serif;
+  display: block;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .4em;
+    line-height: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.home-wotd__middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.home-wotd__desc, .home-wotd__judges {
+  width: 43.188%;
+  margin-right: 0;
+  margin-left: auto;
+  padding-left: 8.918%;
+  padding-right: 8%;
+ 
+}
+
+.home-wotd__judges {
+  font-family: "Open Sans", sans-serif;
+}
+.home-wotd__desc {
+  font-family: serif;
+}
+
+home-wotd__thumbnail:hover img {
+  box-shadow: none;
+}
+
+.home-wotd__thumbnail a {
+  position: relative;
+  display: inline-block;
+}
+
+.home-wotd__thumbnail {
+  width: 66.582%;
+  position: relative;
+  margin-bottom: -176px;
+  z-index: 1;
+}
+
+.home-wotd__scores {
+  width: 77.379%;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: .075em;
+  line-height: 1.3em;
+  color: #282828;
+}
+
+.home-wotd__thumbnail img {
+  display: block;
+  box-shadow: 10px 15px 35px -5px rgba(0,0,0,.25);
+  transition: box-shadow .2s ease-in-out;
+}
+
+.home-wotd__title, .home-wotd__title a {
+  color: #282828;
+}
+.home-wotd__meta, .home-wotd__subtitle {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.2em;
+  letter-spacing: .075em;
+}
+
+.home-wotd__title {
+  margin-bottom: 0.15em;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.home-wotd__monogram {
+  width: 120px;
+  max-width: 100%;
+  margin-bottom: 25px;
+  display: block;
+
+}
+
+.home-wotd__side {
+  padding-left: 6.9%;
+  width: 33.418%;
+  padding-bottom: 30px;
+}
+
+.home-wotd__wrapper {
+  padding-left: 10.37%
+}
+
+.home-wotd__thumbnail {
+  width: 66.582%;
+  position: relative;
+  margin-bottom: -176px;
+  z-index: 1;
+}
+
+/* PARTICIPANTS LIST */
+
+
+.projects__list {
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.header__main-wrapper, .projects__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+
+
+
+
+.single-project>div {
+    display: block;
+    margin: 0 auto;
+    width: 360px;
+    max-width: 100%;
+}
+
+.single-project {
+  width: calc(33.33% - 60px);
+  margin-bottom: 102px;
+}
+
+.single-project__thumbnail {
+  display: block;
+  margin-bottom: 27px;
+  position: relative;
+}
+
+.single-project__thumbnail img {
+  max-width: 100%;
+}
+
+.single-project__title {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: .065em;
+  margin-bottom: 0.4em;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

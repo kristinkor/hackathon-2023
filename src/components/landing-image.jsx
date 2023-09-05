@@ -3,10 +3,11 @@ import CTPImg from '../assets/logoq.png'
 
 const FullscreenImageLayout = () => {
     return (
-        <div className="flex flex-col h-screen">
+        <div className="flex flex-col mb-24">
             <div className="flex">
                 <div className="relative h-0 banner-block">
                     <div className="image-art"></div>
+                    <div className="image-tech"></div>
                     <img
                         src={CTPImg}
                         alt="ctp"
